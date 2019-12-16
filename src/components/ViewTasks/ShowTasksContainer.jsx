@@ -6,7 +6,7 @@ import {
     getTasksThunk,
     setVisibleEditTask,
     setSortDirection, setTasks
-} from "../../redux/tasks-reducer";   //Action creators
+} from "../../redux/tasks-reducer";
 import {
     getCurrentPage, getPageSize, getTotalTasksCount,
     getTasks, getTaskSuperSelector,
@@ -45,8 +45,7 @@ class ShowTasksContainer extends React.Component {
     onPageChanged = (pageNumber) => {
         let currentPagesSortDirectionValue = JSON.parse(localStorage.getItem('currentPagesSortDirectionValue' + pageNumber));
         let currentPagesSortedByValue = JSON.parse(localStorage.getItem('currentPagesSortedByValue' + pageNumber));
-
-            this.props.getTasksThunk(pageNumber, currentPagesSortDirectionValue, currentPagesSortedByValue);
+        this.props.getTasksThunk(pageNumber, currentPagesSortDirectionValue, currentPagesSortedByValue);
     }
 
     render() {
@@ -74,5 +73,4 @@ let mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, {
-    getTasksThunk, editTaskDataActionCreater, setCheckLogined, setVisibleEditTask, setTasks, setSortDirection
-})(ShowTasksContainer)
+    getTasksThunk, editTaskDataActionCreater, setCheckLogined, setVisibleEditTask, setTasks, setSortDirection})(ShowTasksContainer)

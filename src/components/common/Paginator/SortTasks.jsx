@@ -59,8 +59,6 @@ class SortTasks extends React.Component {
                         className={style.sortButton} onClick={this.addDataToSort}>Сортировать
                 </button>
             </div>
-
-
         )
     }
 

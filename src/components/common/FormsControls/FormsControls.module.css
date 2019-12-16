@@ -1,17 +1,17 @@
 .formControll.error textarea {
     border: solid red 2px;
 }
-.addTaskForm{
+
+.addTaskForm {
     background-color: peachpuff;
     padding: 10px;
-
 }
-.editTaskForm{
+
+.editTaskForm {
     background-color: peachpuff;
     padding: 10px;
     height: 230px;
 }
-
 
 .formControll.error input {
     border: solid red 1px;

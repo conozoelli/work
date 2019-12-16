@@ -32,10 +32,8 @@ const TaskPage = props => {
                     <button className={s.logoutButton} onClick={props.logoutMeThunk}>Выход</button>
                 </div> :
                     <NavLink to={'/login'}><button className={s.logoutButton}>Вход</button></NavLink>}
-
             </div>
             <div>
-
             </div>
         </div>
     )

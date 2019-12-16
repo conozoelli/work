@@ -26,7 +26,6 @@ const LoginPage = props => {
 let mapStateToProps = (state) => {
     return {
         isAuth: state.auth.isAuth,
-
     }
 }
 

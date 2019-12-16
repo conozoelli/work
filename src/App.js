@@ -20,10 +20,7 @@ class App extends React.Component {
     }
 }
 
-let AppContainer = compose(
-    connect(null, null),
-    withRouter
-)(App);
+let AppContainer = compose(connect(null, null), withRouter)(App);
 
 const MainApp = props => {
     return (

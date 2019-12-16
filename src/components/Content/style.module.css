@@ -12,7 +12,6 @@
 .loginBlock a {
     color: black;
     font-size: 20px;
-
 }
 
 .addUser {
@@ -20,15 +19,18 @@
     top: 0px;
     right: 150px;
 }
-.addUser button{
+
+.addUser button {
     border-radius: 3px;
     background-color: lemonchiffon;
 }
-.logoutButton{
+
+.logoutButton {
     border-radius: 3px;
     background-color: antiquewhite;
     width: 70px;
 }
+
 .addTaskForm {
     position: absolute;
     top: 40px;
@@ -50,7 +52,8 @@
     color: blue;
     font-size: 20px;
 }
-.isLoginedAdmin{
+
+.isLoginedAdmin {
     position: absolute;
     top: 5px;
     left: 400px;

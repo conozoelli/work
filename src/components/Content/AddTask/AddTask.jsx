@@ -21,13 +21,12 @@ const AddTask = ({handleSubmit, error, closeTask}) => {
                 <div>
                     {createField("Email", "email", [requairedField], Input)}
                 </div>
-
                 <div>
                     {createField("Text", "text", [requairedField], Textarea)}
                 </div>
 
                 <div>
-                    <button  onClick={() => {
+                    <button onClick={() => {
                     }}>Добавить задание
                     </button>
                 </div>

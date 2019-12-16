@@ -1,5 +1,5 @@
 .taskBlock {
-  margin-top: 10px;
+    margin-top: 10px;
     border: 1px solid darkblue;
     width: 500px;
     margin-bottom: 3px;
@@ -8,7 +8,6 @@
 
 .tableShowTasks tr td {
     text-align: left;
-
 }
 
 .nameColumn {
@@ -28,7 +27,6 @@
     background-color: cornsilk;
     width: 500px;
     border-radius: 3px;
-
 }
 
 .editButton {

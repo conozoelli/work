@@ -4,7 +4,6 @@ import Task from "./Task";
 import style from '../Login/Login.module.css'
 
 class Tasks extends React.Component {
-
     render(){
         return (
             <div>
@@ -13,8 +12,7 @@ class Tasks extends React.Component {
                            totalUsersCount={this.props.totalUsersCount}
                            pageSize={this.props.pageSize}{...this.props} portionSize={this.props.portionSize}/>
                 <div>
-                    {this.props.tasks.map((t, i) => <Task visibleTaskAddForm={this.props.visibleTaskAddForm}  task={t} key={t.id} isAuth={this.props.isAuth}
-                                                      onEditTask={this.props.onEditTask}/>)}
+                    {this.props.tasks.map((t, i) => <Task visibleTaskAddForm={this.props.visibleTaskAddForm}  task={t} key={t.id} isAuth={this.props.isAuth} onEditTask={this.props.onEditTask}/>)}
                 </div>
             </div>
         )

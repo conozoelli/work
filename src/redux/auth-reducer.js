@@ -35,11 +35,9 @@ const authReducer = (state = stateInit, action) => {
 }
 export default authReducer;
 
-
 export const setIsAuth = (isAuth) => ({ type: SET_IS_AUTH, isAuth })
 export const setMessage = (message) => ({ type: SET_MESSAGE, message })
 export const setCheckLogined = (value) => ({ type: SET_ISLOGINED,value })
-
 
 export const loginMeThunk = (data) => async (dispatch) => {
     let response = await authAPI.loginUser(data);
@@ -48,7 +46,6 @@ export const loginMeThunk = (data) => async (dispatch) => {
         dispatch(setIsAuth(localStorage.getItem('token')))
         dispatch(setCheckLogined(''))
         dispatch(setMessage('Привет,admin'));
-
     } else {
         dispatch(stopSubmit('login', { _error: response.data.message.password }));
     }
